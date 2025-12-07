@@ -1,5 +1,8 @@
 # Aleena Malik - Portfolio
 
+**Live Demo:** [https://aleena-malik-portfolio-5dv6.vercel.app](https://aleena-malik-portfolio-5dv6.vercel.app)
+
+
 A modern, interactive portfolio website built with React, Tailwind CSS, and Framer Motion. This portfolio showcases my skills, projects, and experience as a Full Stack Web Developer.
 
 ## 🚀 Features

@@ -8,7 +8,7 @@ const Experience = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
+        staggerChildren: 0.15,
       },
     },
   };
@@ -20,7 +20,7 @@ const Experience = () => {
       y: 0,
       scale: 1,
       transition: {
-        duration: 0.8,
+        duration: 0.6,
         ease: "easeOut",
       },
     },
@@ -35,8 +35,8 @@ const Experience = () => {
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.3 }}
         className="text-center mb-16"
       >
         <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
@@ -53,14 +53,14 @@ const Experience = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
+        viewport={{ once: false, amount: 0.1 }}
       >
         {/* Vertical line */}
         <motion.div
           initial={{ height: 0 }}
           whileInView={{ height: "100%" }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
-          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeInOut" }}
+          viewport={{ once: false, amount: 0.1 }}
           className="absolute sm:left-1/2 left-8 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-gradient-to-b from-[#8245ec] via-purple-500 to-transparent h-full"
         ></motion.div>
 

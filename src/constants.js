@@ -19,6 +19,7 @@ import resultPic from './assets/aleena_assets/result picture.png';
 import capregsoftLogo from './assets/aleena_assets/capregsoft.png';
 import liveClockPic from './assets/aleena_assets/live clock.png';
 import portfolioPic from './assets/aleena_assets/aleena-portfolio-website.png';
+import navttcLogo from './assets/aleena_assets/navttc.png';
 
 // Import education images
 import fgPgCollegeImg from './assets/education/fg pg college.jpeg';
@@ -29,28 +30,29 @@ import fgSchoolImg from './assets/education/fg school no 7.jpeg';
 export const SkillsInfo = [
   {
     title: 'Technical Skills',
-    type: 'bar',
+    description: 'Technologies I use to build robust applications',
     skills: [
       { name: 'HTML', logo: htmlLogo, percentage: 95 },
       { name: 'CSS', logo: cssLogo, percentage: 91 },
       { name: 'JavaScript', logo: javascriptLogo, percentage: 85 },
-      { name: 'ReactJS', logo: reactjsLogo, percentage: 78 },
-      { name: 'Java', logo: javaLogo, percentage: 82 },
+      { name: 'ReactJS', logo: reactjsLogo, percentage: 80 },
+      { name: 'NodeJS', logo: nodejsLogo, percentage: 75 },
       { name: 'Python', logo: pythonLogo, percentage: 88 },
-      { name: 'C', logo: cLogo, percentage: 80 },
+      { name: 'Java', logo: javaLogo, percentage: 82 },
       { name: 'C++', logo: cppLogo, percentage: 83 },
       { name: 'SQL', logo: mysqlLogo, percentage: 85 },
-      { name: 'NodeJS', logo: nodejsLogo, percentage: 75 },
+      { name: 'PowerBI', logo: htmlLogo, percentage: 90 }, // Using htmlLogo as placeholder if specific logo missing, or I can try to find powerbi logo
     ],
   },
   {
     title: 'Professional Skills',
-    type: 'circular',
+    description: 'Soft skills that contribute to my professional success',
     skills: [
-      { name: 'PowerBI', logo: htmlLogo, percentage: 90 },
-      { name: 'AI & ML', logo: pythonLogo, percentage: 85 },
-      { name: 'Deep Learning', logo: pythonLogo, percentage: 80 },
-      { name: 'MS Office', logo: htmlLogo, percentage: 95 },
+      { name: 'Problem Solving', percentage: 90 },
+      { name: 'Logical & Analytical Thinking', percentage: 85 },
+      { name: 'Team Collaboration', percentage: 85 },
+      { name: 'Technical Documentation', percentage: 90 },
+      { name: 'Fast Learning & Adaptability', percentage: 95 },
     ],
   },
 ];
@@ -58,6 +60,15 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
+    img: navttcLogo,
+    role: "AI Machine Learning Course",
+    company: "NAVTTC (National Vocational & Technical Training Commission)",
+    date: "Certification Program",
+    desc: "Completed comprehensive training in Artificial Intelligence, Machine Learning, and Business Intelligence. Gained expertise in AI algorithms, data analysis, and BI tools.",
+    skills: ["AI", "Machine Learning", "PowerBI", "Python", "Data Analysis"],
+  },
+  {
+    id: 1,
     img: "videos/capregsoft_logo_pic.png",
     role: "Full Stack Web Developer Trainee",
     company: "Capregsoft",

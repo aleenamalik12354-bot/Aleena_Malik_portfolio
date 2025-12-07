@@ -15,8 +15,8 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1.0] }}
-          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
+          viewport={{ once: false, amount: 0.2 }}
           className="md:w-1/2 text-center md:text-left"
         >
           {/* Greeting */}
@@ -77,8 +77,8 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1.0], delay: 0.2 }}
-          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
+          viewport={{ once: false, amount: 0.2 }}
           className="md:w-1/2 flex justify-center md:justify-end relative z-10"
         >
           {/* Pulsing Glow Effect */}

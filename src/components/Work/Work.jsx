@@ -22,8 +22,8 @@ const Work = () => {
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1.0] }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1.0] }}
+        viewport={{ once: false, amount: 0.3 }}
         className="text-center mb-16 px-[7vw]"
       >
         <h2 className="text-4xl font-bold text-white">PROJECTS</h2>
@@ -37,8 +37,8 @@ const Work = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.1 }}
         className="relative w-full overflow-hidden py-10 group"
       >
         {/* Gradient Masks */}

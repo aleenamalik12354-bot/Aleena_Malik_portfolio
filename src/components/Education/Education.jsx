@@ -12,8 +12,8 @@ const Education = () => {
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1.0] }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1.0] }}
+        viewport={{ once: false, amount: 0.3 }}
         className="text-center mb-16"
       >
         <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
@@ -29,8 +29,8 @@ const Education = () => {
         <motion.div
           initial={{ height: 0 }}
           whileInView={{ height: "100%" }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
-          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeInOut" }}
+          viewport={{ once: false, amount: 0.1 }}
           className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"
         ></motion.div>
 
@@ -40,8 +40,8 @@ const Education = () => {
             key={edu.id}
             initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1.0], delay: index * 0.2 }}
-            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1.0], delay: index * 0.1 }}
+            viewport={{ once: false, amount: 0.3 }}
             className={`flex flex-col sm:flex-row items-center mb-16 ${index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"
               }`}
           >

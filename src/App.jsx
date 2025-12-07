@@ -8,19 +8,22 @@ import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BackgroundAnimation from "./components/BackgroundAnimation/BackgroundAnimation";
+import ScrollProgress from "./components/ScrollProgress/ScrollProgress";
+import BackToTop from "./components/BackToTop/BackToTop";
 import Lenis from 'lenis';
 
 export default function App() {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.0,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      duration: 0.8, // Faster scroll duration
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Smooth easing
       direction: 'vertical',
       gestureDirection: 'vertical',
       smooth: true,
-      mouseMultiplier: 1,
+      mouseMultiplier: 1.5, // More responsive mouse wheel
       smoothTouch: false,
-      touchMultiplier: 2,
+      touchMultiplier: 2.5, // Better touch scrolling
+      infinite: false,
     });
 
     function raf(time) {
@@ -37,6 +40,7 @@ export default function App() {
 
   return (
     <div className="bg-primary text-white min-h-screen relative">
+      <ScrollProgress />
       <BackgroundAnimation />
       <Navbar />
       <main className="relative z-10">
@@ -48,6 +52,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }
